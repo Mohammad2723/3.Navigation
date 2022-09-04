@@ -22,9 +22,13 @@
         android:id="@+id/detailsFragment"
         android:name="ebrahimi16153.github.com.a3navigation.DetailsFragment"
         android:label="Details"
-        tools:layout="@layout/fragment_details" >
+        tools:layout="@layout/fragment_details">
         <argument
             android:name="bundelInfo"
             app:argType="string" />
+        <!--depp link-->
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="ebrahimi2723.com/{bundelInfo}" />
     </fragment>
 </navigation>
